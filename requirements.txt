@@ -1,0 +1,8 @@
+mujoco==3.3.7
+numpy==2.2.6
+scipy==1.17.1
+qpsolvers==4.4.0
+clarabel==0.11.1
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+matplotlib==3.10.3

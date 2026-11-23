@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "g1-wbc"
+version = "0.1.0"
+description = "Unitree G1 bimanual 6-DOF pose tracking with a floating-base whole-body QP in MuJoCo"
+requires-python = ">=3.11"
+dependencies = [
+    "mujoco>=3.3,<4",
+    "numpy>=2.0,<3",
+    "scipy>=1.13,<2",
+    "qpsolvers>=4.3,<5",
+    "clarabel>=0.9",
+    "imageio>=2.34",
+    "imageio-ffmpeg>=0.5",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+g1-wbc-demo = "g1_wbc.demo:main"
+g1-wbc-live = "g1_wbc.live:main"
+g1-wbc-bench = "g1_wbc.bench:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

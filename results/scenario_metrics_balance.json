@@ -1,0 +1,1598 @@
+{
+  "demo": {
+    "duration_s": 3.5,
+    "steps": 1751,
+    "hand_pos_err_mm": {
+      "rmse": 192.05695685288288,
+      "mean": 141.85674184179783,
+      "max": 666.372358853199,
+      "left_rmse": 192.28913219708244,
+      "right_rmse": 191.82450049478348
+    },
+    "hand_rot_err_deg": {
+      "rmse": 15.884819420482966,
+      "mean": 10.444068179127624,
+      "max": 58.663691663457946
+    },
+    "balance": {
+      "margin_min_m": -0.5502062157443529,
+      "margin_hull_min_mm": -530.2062157443529,
+      "margin_mean_m": -0.041000058318271776,
+      "foot_drift_max_mm": 72.10736337765371,
+      "foot_rot_drift_max_deg": 59.748067393479154,
+      "ncon_min": 0,
+      "base_z_min": 0.05125543342091225,
+      "fell": true,
+      "fall_time_s": 3.228
+    },
+    "smoothness": {
+      "joint_vel_max": 8.461909257743526,
+      "joint_vel_rms": 0.6763108860863654,
+      "joint_acc_max": 1024.183409282611,
+      "joint_acc_max_t": 3.364,
+      "joint_acc_rms": 20.543810398454173,
+      "joint_jerk_rms": 7535.351270672687,
+      "joint_jerk_max": 509767.4194077833,
+      "ee_acc_max": 467.20307029972935,
+      "ee_acc_max_t": 3.366,
+      "ee_acc_rms": 22.567835510691836,
+      "ee_jerk_rms": 6109.149915076299,
+      "err_acc_rms_mm": 12316.786545647534,
+      "err_jerk_rms_mm": 3261185.95934699,
+      "base_vel_max": 3.3436818734494844,
+      "steady_joint_acc_rms": 6.946940580237906,
+      "steady_joint_jerk_rms": 3304.440879795766,
+      "steady_ee_acc_rms": 6.197728674970783,
+      "steady_ee_jerk_rms": 234.39917660821908
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.841241156881941,
+      "solve_time_max_ms": 4.68575005652383,
+      "solve_time_p95_ms": 3.975718590663746,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.32653984257413715,
+      "margin_min_m": 0.008435680674154608,
+      "hand_pos_err_mean_mm": 36.91957314599281,
+      "hand_pos_err_max_mm": 117.0448889106225
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 62.05850630380381,
+      "rmse_deg": 17.982570137480327,
+      "peak_err_deg": 62.05850630380381
+    },
+    "head": {
+      "x_pp_mm": 1061.238924804255,
+      "y_pp_mm": 10.369566458679328,
+      "z_pp_mm": 563.4869308312065,
+      "x_vel_rms_mps": 0.6616669838084707,
+      "pitch_pp_deg": 60.003239754832485,
+      "err_x_rmse_mm": 287.3502724987165,
+      "err_x_max_mm": 1015.7570773901548,
+      "err_y_rmse_mm": 2.7944778099831002
+    },
+    "scenario": "demo",
+    "title": "默认综合动作",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.5179166366938324,
+    "actual_peak_speed_mps": 2.2547325985444195,
+    "actual_peak_left_mps": 2.1873210911526053,
+    "actual_peak_right_mps": 2.2547325985444195,
+    "realtime": {
+      "wall_time_s": 8.732811041991226,
+      "realtime_factor": 0.40101634893516325,
+      "solve_time_mean_ms": 2.814858500585907,
+      "solve_time_p95_ms": 3.8847294927109033,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "wave": {
+    "duration_s": 3.66,
+    "steps": 1831,
+    "hand_pos_err_mm": {
+      "rmse": 47.19112795877979,
+      "mean": 41.819097956987164,
+      "max": 106.43268953603378,
+      "left_rmse": 46.36602236650654,
+      "right_rmse": 48.002052934770106
+    },
+    "hand_rot_err_deg": {
+      "rmse": 4.827333212325463,
+      "mean": 4.339439269261187,
+      "max": 12.048340433124016
+    },
+    "balance": {
+      "margin_min_m": 0.005252155245960302,
+      "margin_hull_min_mm": 25.252155245960303,
+      "margin_mean_m": 0.045570667937693925,
+      "foot_drift_max_mm": 15.085707482917872,
+      "foot_rot_drift_max_deg": 4.792185284158543,
+      "ncon_min": 1,
+      "base_z_min": 0.7601978968701566,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 2.9151906969715347,
+      "joint_vel_rms": 0.8046844499363762,
+      "joint_acc_max": 1228.9163713469297,
+      "joint_acc_max_t": 2.388,
+      "joint_acc_rms": 16.365095256753072,
+      "joint_jerk_rms": 7150.193556345135,
+      "joint_jerk_max": 685612.881619318,
+      "ee_acc_max": 24.056654155471747,
+      "ee_acc_max_t": 1.6520000000000001,
+      "ee_acc_rms": 8.15862756605662,
+      "ee_jerk_rms": 392.9242153079023,
+      "err_acc_rms_mm": 7126.584750302324,
+      "err_jerk_rms_mm": 297854.2998965341,
+      "base_vel_max": 0.30261803557449823,
+      "steady_joint_acc_rms": 17.28683135626495,
+      "steady_joint_jerk_rms": 7468.755590219046,
+      "steady_ee_acc_rms": 8.646786573459464,
+      "steady_ee_jerk_rms": 368.2214495989083
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.9099743028904204,
+      "solve_time_max_ms": 9.020708035677671,
+      "solve_time_p95_ms": 4.073929047444835,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.08244020862633024,
+      "margin_min_m": 0.016143850177684424,
+      "hand_pos_err_mean_mm": 39.12854359982529,
+      "hand_pos_err_max_mm": 114.11044224785924
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 7.428174662390472,
+      "rmse_deg": 4.464640848060166,
+      "peak_err_deg": 7.428174662390472
+    },
+    "head": {
+      "x_pp_mm": 127.23597380060852,
+      "y_pp_mm": 40.62463396517881,
+      "z_pp_mm": 25.70825426379364,
+      "x_vel_rms_mps": 0.19477915307061533,
+      "pitch_pp_deg": 6.576075544827014,
+      "err_x_rmse_mm": 31.556635374825238,
+      "err_x_max_mm": 74.4614305039867,
+      "err_y_rmse_mm": 10.000487613481368
+    },
+    "scenario": "wave",
+    "title": "快速挥手",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.2661157430727485,
+    "actual_peak_speed_mps": 1.2693728778877087,
+    "actual_peak_left_mps": 1.2693728778877087,
+    "actual_peak_right_mps": 1.18699225668306,
+    "realtime": {
+      "wall_time_s": 9.407050709007308,
+      "realtime_factor": 0.38928247686531686,
+      "solve_time_mean_ms": 2.869425408277917,
+      "solve_time_p95_ms": 4.015749989775941,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": -2.12202337492831,
+      "hit_frames": 7,
+      "seconds": 0.07,
+      "pairs": [
+        {
+          "pair": [
+            "left_shoulder_yaw_link",
+            "torso_link"
+          ],
+          "kind": "arm-body",
+          "frames": 7,
+          "depth_mm": -2.12202337492831,
+          "t0": 0.79,
+          "t1": 0.8500000000000001
+        },
+        {
+          "pair": [
+            "right_shoulder_yaw_link",
+            "torso_link"
+          ],
+          "kind": "arm-body",
+          "frames": 7,
+          "depth_mm": -2.1066952495119784,
+          "t0": 0.79,
+          "t1": 0.8500000000000001
+        }
+      ]
+    }
+  },
+  "alternate": {
+    "duration_s": 4.97,
+    "steps": 2486,
+    "hand_pos_err_mm": {
+      "rmse": 140.4935770553911,
+      "mean": 66.90130959154764,
+      "max": 704.3990250195534,
+      "left_rmse": 140.52564620292142,
+      "right_rmse": 140.4615005860666
+    },
+    "hand_rot_err_deg": {
+      "rmse": 12.19574996504579,
+      "mean": 5.663043611242573,
+      "max": 61.992964489107635
+    },
+    "balance": {
+      "margin_min_m": -0.5593918816879722,
+      "margin_hull_min_mm": -539.3918816879722,
+      "margin_mean_m": 0.0023571603267756014,
+      "foot_drift_max_mm": 73.29439617421592,
+      "foot_rot_drift_max_deg": 63.04135353866681,
+      "ncon_min": 0,
+      "base_z_min": 0.3909802472336837,
+      "fell": true,
+      "fall_time_s": 4.942
+    },
+    "smoothness": {
+      "joint_vel_max": 2.028916035661133,
+      "joint_vel_rms": 0.5170170621452735,
+      "joint_acc_max": 234.83989010226367,
+      "joint_acc_max_t": 0.66,
+      "joint_acc_rms": 4.8944179408881485,
+      "joint_jerk_rms": 2576.900788632063,
+      "joint_jerk_max": 140605.66390055764,
+      "ee_acc_max": 12.445446619346571,
+      "ee_acc_max_t": 4.97,
+      "ee_acc_rms": 3.474514957678623,
+      "ee_jerk_rms": 208.2427892805778,
+      "err_acc_rms_mm": 2066.013392581019,
+      "err_jerk_rms_mm": 137686.92172212663,
+      "base_vel_max": 2.598534014717163,
+      "steady_joint_acc_rms": 5.055576842376045,
+      "steady_joint_jerk_rms": 2712.7939147117163,
+      "steady_ee_acc_rms": 3.4577666451754436,
+      "steady_ee_jerk_rms": 207.16604063059762
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.59286449459462,
+      "solve_time_max_ms": 66.3366669905372,
+      "solve_time_p95_ms": 3.3671578159555784,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.25322197631376425,
+      "margin_min_m": -4.647384788411535e-05,
+      "hand_pos_err_mean_mm": 27.52238480005503,
+      "hand_pos_err_max_mm": 81.77933169124455
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 65.43349410790164,
+      "rmse_deg": 13.548695829952779,
+      "peak_err_deg": 65.43349410790164
+    },
+    "head": {
+      "x_pp_mm": 1095.1222886317703,
+      "y_pp_mm": 52.45609357883298,
+      "z_pp_mm": 586.3102576170261,
+      "x_vel_rms_mps": 0.5481155666273863,
+      "pitch_pp_deg": 64.31753380055208,
+      "err_x_rmse_mm": 220.25366331058527,
+      "err_x_max_mm": 1046.791937396807,
+      "err_y_rmse_mm": 2.770798036581891
+    },
+    "scenario": "alternate",
+    "title": "左右交替高低",
+    "controller": "balance",
+    "target_peak_speed_mps": 0.7604732810490105,
+    "actual_peak_speed_mps": 2.199421604117107,
+    "actual_peak_left_mps": 2.199421604117107,
+    "actual_peak_right_mps": 2.1930582409602786,
+    "realtime": {
+      "wall_time_s": 11.419756540970411,
+      "realtime_factor": 0.4353858142388644,
+      "solve_time_mean_ms": 2.585395891659564,
+      "solve_time_p95_ms": 3.2810934935696423,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "circle": {
+    "duration_s": 3.58,
+    "steps": 1791,
+    "hand_pos_err_mm": {
+      "rmse": 83.71690934323642,
+      "mean": 51.562088005867444,
+      "max": 319.07532374045053,
+      "left_rmse": 80.58567513586966,
+      "right_rmse": 86.73517615629432
+    },
+    "hand_rot_err_deg": {
+      "rmse": 7.342005797118803,
+      "mean": 4.865406949093373,
+      "max": 27.195487988063167
+    },
+    "balance": {
+      "margin_min_m": -0.22368692229797593,
+      "margin_hull_min_mm": -203.6869222979759,
+      "margin_mean_m": 0.013764250077729774,
+      "foot_drift_max_mm": 38.92162446091693,
+      "foot_rot_drift_max_deg": 27.20971182990113,
+      "ncon_min": 3,
+      "base_z_min": 0.7318690051881329,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 2.1208330108232425,
+      "joint_vel_rms": 0.6746996673923503,
+      "joint_acc_max": 424.903629036804,
+      "joint_acc_max_t": 0.534,
+      "joint_acc_rms": 9.062298826831501,
+      "joint_jerk_rms": 3442.8079139345946,
+      "joint_jerk_max": 238066.98726739283,
+      "ee_acc_max": 16.236743157275303,
+      "ee_acc_max_t": 2.492,
+      "ee_acc_rms": 6.544975436287395,
+      "ee_jerk_rms": 312.9909246035545,
+      "err_acc_rms_mm": 2858.366794292439,
+      "err_jerk_rms_mm": 196061.43572933975,
+      "base_vel_max": 0.8166769208273208,
+      "steady_joint_acc_rms": 9.086211234692351,
+      "steady_joint_jerk_rms": 3131.3277529095867,
+      "steady_ee_acc_rms": 6.888054151259401,
+      "steady_ee_jerk_rms": 263.53024016618434
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.5224423036629635,
+      "solve_time_max_ms": 10.374124976806343,
+      "solve_time_p95_ms": 3.1995623838156457,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.1077747357184503,
+      "margin_min_m": 0.008801295525259135,
+      "hand_pos_err_mean_mm": 31.517269500600012,
+      "hand_pos_err_max_mm": 102.20722143099535
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 30.543106573788997,
+      "rmse_deg": 8.80030199725177,
+      "peak_err_deg": 30.543106573788997
+    },
+    "head": {
+      "x_pp_mm": 528.0051571008045,
+      "y_pp_mm": 51.52719560497683,
+      "z_pp_mm": 112.22472659405325,
+      "x_vel_rms_mps": 0.30530663198291275,
+      "pitch_pp_deg": 28.284389032966146,
+      "err_x_rmse_mm": 127.89751367711703,
+      "err_x_max_mm": 504.31773443804116,
+      "err_y_rmse_mm": 8.03759335082617
+    },
+    "scenario": "circle",
+    "title": "双手反相画圆",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.3106637390580331,
+    "actual_peak_speed_mps": 1.3069650910922432,
+    "actual_peak_left_mps": 1.3069650910922432,
+    "actual_peak_right_mps": 1.275225336751294,
+    "realtime": {
+      "wall_time_s": 8.211786291969474,
+      "realtime_factor": 0.4362022917599468,
+      "solve_time_mean_ms": 2.5705489073763013,
+      "solve_time_p95_ms": 3.261542005930096,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "converge": {
+    "duration_s": 3.8200000000000003,
+    "steps": 1911,
+    "hand_pos_err_mm": {
+      "rmse": 102.93347301863486,
+      "mean": 58.28313291611242,
+      "max": 423.47834890888475,
+      "left_rmse": 102.05462093473604,
+      "right_rmse": 103.80488466938056
+    },
+    "hand_rot_err_deg": {
+      "rmse": 8.79043519488443,
+      "mean": 5.124305411979345,
+      "max": 35.94711486272344
+    },
+    "balance": {
+      "margin_min_m": -0.32082027201013386,
+      "margin_hull_min_mm": -300.82027201013386,
+      "margin_mean_m": 0.01310524882058004,
+      "foot_drift_max_mm": 51.6685093649082,
+      "foot_rot_drift_max_deg": 36.29172679866391,
+      "ncon_min": 1,
+      "base_z_min": 0.6849095120673152,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 2.21541036401282,
+      "joint_vel_rms": 0.6092045406196758,
+      "joint_acc_max": 382.2452158186227,
+      "joint_acc_max_t": 0.894,
+      "joint_acc_rms": 6.755576654120199,
+      "joint_jerk_rms": 2814.40303611682,
+      "joint_jerk_max": 236917.56650147866,
+      "ee_acc_max": 13.190222553626022,
+      "ee_acc_max_t": 0.9400000000000001,
+      "ee_acc_rms": 5.463659789602754,
+      "ee_jerk_rms": 258.30715278337266,
+      "err_acc_rms_mm": 2782.0026560868887,
+      "err_jerk_rms_mm": 183063.71269082715,
+      "base_vel_max": 1.230196545571483,
+      "steady_joint_acc_rms": 6.7880655570172355,
+      "steady_joint_jerk_rms": 2720.2458303856197,
+      "steady_ee_acc_rms": 5.691548118229643,
+      "steady_ee_jerk_rms": 219.8408853405731
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.5998808538324214,
+      "solve_time_max_ms": 5.61691599432379,
+      "solve_time_p95_ms": 3.4517500316724177,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.1169075749001942,
+      "margin_min_m": 0.007071210046654446,
+      "hand_pos_err_mean_mm": 24.071515507884154,
+      "hand_pos_err_max_mm": 109.80714143703672
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 39.35712297738186,
+      "rmse_deg": 10.22616375864624,
+      "peak_err_deg": 39.35712297738186
+    },
+    "head": {
+      "x_pp_mm": 700.3974686231965,
+      "y_pp_mm": 25.84638264187093,
+      "z_pp_mm": 201.65709315741643,
+      "x_vel_rms_mps": 0.41314744935828746,
+      "pitch_pp_deg": 37.604933938563605,
+      "err_x_rmse_mm": 158.77230077113092,
+      "err_x_max_mm": 669.672888567474,
+      "err_y_rmse_mm": 5.411629017754339
+    },
+    "scenario": "converge",
+    "title": "向中线收拢 + 大幅腕转",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.2557683719359232,
+    "actual_peak_speed_mps": 1.334273691657042,
+    "actual_peak_left_mps": 1.334273691657042,
+    "actual_peak_right_mps": 1.253306492130944,
+    "realtime": {
+      "wall_time_s": 17.17519674997311,
+      "realtime_factor": 0.2225302018741639,
+      "solve_time_mean_ms": 4.949386622911453,
+      "solve_time_p95_ms": 6.666937522822991,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": -0.4883023508168188,
+      "hit_frames": 22,
+      "seconds": 0.21999999999999997,
+      "pairs": [
+        {
+          "pair": [
+            "left_shoulder_yaw_link",
+            "torso_link"
+          ],
+          "kind": "arm-body",
+          "frames": 14,
+          "depth_mm": -0.40213007541985163,
+          "t0": 0.8800000000000001,
+          "t1": 1.01
+        },
+        {
+          "pair": [
+            "right_shoulder_yaw_link",
+            "torso_link"
+          ],
+          "kind": "arm-body",
+          "frames": 14,
+          "depth_mm": -0.4883023508168188,
+          "t0": 0.8800000000000001,
+          "t1": 1.01
+        },
+        {
+          "pair": [
+            "left_shoulder_roll_link",
+            "torso_link"
+          ],
+          "kind": "arm-body",
+          "frames": 15,
+          "depth_mm": -0.3223400266254834,
+          "t0": 0.95,
+          "t1": 1.09
+        },
+        {
+          "pair": [
+            "right_shoulder_roll_link",
+            "torso_link"
+          ],
+          "kind": "arm-body",
+          "frames": 15,
+          "depth_mm": -0.3697364227597889,
+          "t0": 0.95,
+          "t1": 1.09
+        }
+      ]
+    }
+  },
+  "pickup": {
+    "duration_s": 3.66,
+    "steps": 1831,
+    "hand_pos_err_mm": {
+      "rmse": 183.99394044029629,
+      "mean": 124.72574378477849,
+      "max": 612.0877699310486,
+      "left_rmse": 171.59937704563472,
+      "right_rmse": 195.6046881724584
+    },
+    "hand_rot_err_deg": {
+      "rmse": 21.92061767684228,
+      "mean": 11.489411971044204,
+      "max": 93.65500405475656
+    },
+    "balance": {
+      "margin_min_m": -0.4490798440317753,
+      "margin_hull_min_mm": -429.0798440317753,
+      "margin_mean_m": -0.047869785707878976,
+      "foot_drift_max_mm": 234.74068586668645,
+      "foot_rot_drift_max_deg": 66.89811641589998,
+      "ncon_min": 0,
+      "base_z_min": 0.2654827366600078,
+      "fell": true,
+      "fall_time_s": 2.05
+    },
+    "smoothness": {
+      "joint_vel_max": 8.28954248462671,
+      "joint_vel_rms": 0.6421751561406296,
+      "joint_acc_max": 1330.5668090353386,
+      "joint_acc_max_t": 1.872,
+      "joint_acc_rms": 20.389621703957765,
+      "joint_jerk_rms": 8629.06459964158,
+      "joint_jerk_max": 796468.4143483314,
+      "ee_acc_max": 134.04895319061146,
+      "ee_acc_max_t": 2.164,
+      "ee_acc_rms": 13.895360500191682,
+      "ee_jerk_rms": 4760.2869432632815,
+      "err_acc_rms_mm": 5230.449703332747,
+      "err_jerk_rms_mm": 1905306.1200885072,
+      "base_vel_max": 2.572833324715381,
+      "steady_joint_acc_rms": 18.174574586398528,
+      "steady_joint_jerk_rms": 10826.159104152708,
+      "steady_ee_acc_rms": 7.120177785574046,
+      "steady_ee_jerk_rms": 1321.1120363102202
+    },
+    "plan": {
+      "solve_time_mean_ms": 4.576343198273778,
+      "solve_time_max_ms": 600.7242079940625,
+      "solve_time_p95_ms": 6.849843589588996,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.5730663209405454,
+      "margin_min_m": 3.6666226657045e-05,
+      "hand_pos_err_mean_mm": 50.70506905923752,
+      "hand_pos_err_max_mm": 138.28569720025874
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 51.583908673004075,
+      "actual_peak_deg": 95.21875414526798,
+      "rmse_deg": 18.986436272075878,
+      "peak_err_deg": 63.50124770912117
+    },
+    "head": {
+      "x_pp_mm": 948.255856517054,
+      "y_pp_mm": 276.34293193796213,
+      "z_pp_mm": 780.0528940881792,
+      "x_vel_rms_mps": 0.7758120237414565,
+      "pitch_pp_deg": 78.43660407508308,
+      "err_x_rmse_mm": 248.02586113115183,
+      "err_x_max_mm": 813.3373875620125,
+      "err_y_rmse_mm": 85.58235847881171
+    },
+    "scenario": "pickup",
+    "title": "弯腰捡起地面物品",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.2028331777935406,
+    "actual_peak_speed_mps": 2.3530829298560425,
+    "actual_peak_left_mps": 1.3246312654005574,
+    "actual_peak_right_mps": 2.3530829298560425,
+    "realtime": {
+      "wall_time_s": 9.458407040976454,
+      "realtime_factor": 0.3871687890080429,
+      "solve_time_mean_ms": 2.346792557021956,
+      "solve_time_p95_ms": 4.835791507503018,
+      "controller_failures": 0,
+      "controller_holds": 713
+    },
+    "collision": {
+      "max_depth_mm": -4.9669708128264904,
+      "hit_frames": 19,
+      "seconds": 0.19,
+      "pairs": [
+        {
+          "pair": [
+            "left_hand_thumb_2_link",
+            "left_hip_yaw_link"
+          ],
+          "kind": "arm-body",
+          "frames": 19,
+          "depth_mm": -4.9669708128264904,
+          "t0": 1.12,
+          "t1": 1.3
+        }
+      ]
+    }
+  },
+  "shelf": {
+    "duration_s": 3.474,
+    "steps": 1738,
+    "hand_pos_err_mm": {
+      "rmse": 258.88540647440243,
+      "mean": 158.78313163842944,
+      "max": 863.7317563862086,
+      "left_rmse": 230.7440250703898,
+      "right_rmse": 284.2542915509781
+    },
+    "hand_rot_err_deg": {
+      "rmse": 22.33605561942317,
+      "mean": 13.519765792789801,
+      "max": 71.13641391228991
+    },
+    "balance": {
+      "margin_min_m": -0.5804290685132237,
+      "margin_hull_min_mm": -560.4290685132237,
+      "margin_mean_m": -0.06019585503096614,
+      "foot_drift_max_mm": 171.0146605442609,
+      "foot_rot_drift_max_deg": 72.40667782159701,
+      "ncon_min": 0,
+      "base_z_min": 0.22256976400203518,
+      "fell": true,
+      "fall_time_s": 2.198
+    },
+    "smoothness": {
+      "joint_vel_max": 20.93184130645936,
+      "joint_vel_rms": 1.043840638462536,
+      "joint_acc_max": 1583.4162124819607,
+      "joint_acc_max_t": 1.8,
+      "joint_acc_rms": 33.835860387006534,
+      "joint_jerk_rms": 13684.685844200729,
+      "joint_jerk_max": 926276.0043208697,
+      "ee_acc_max": 139.4379623674572,
+      "ee_acc_max_t": 2.246,
+      "ee_acc_rms": 16.426806149992885,
+      "ee_jerk_rms": 4636.408686985534,
+      "err_acc_rms_mm": 6757.88734280941,
+      "err_jerk_rms_mm": 1796947.5914922967,
+      "base_vel_max": 2.371671578656047,
+      "steady_joint_acc_rms": 31.15561147432805,
+      "steady_joint_jerk_rms": 16889.088358631026,
+      "steady_ee_acc_rms": 13.148829832002882,
+      "steady_ee_jerk_rms": 2643.6865192976265
+    },
+    "plan": {
+      "solve_time_mean_ms": 4.700066780315667,
+      "solve_time_max_ms": 94.38333299476653,
+      "solve_time_p95_ms": 6.6800213680835405,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.3852904881851018,
+      "margin_min_m": 4.8080539478356776e-05,
+      "hand_pos_err_mean_mm": 39.32204231057525,
+      "hand_pos_err_max_mm": 94.64133136280226
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 39.258943677241874,
+      "actual_peak_deg": 86.8294484598426,
+      "rmse_deg": 22.86119616749964,
+      "peak_err_deg": 71.60710441268347
+    },
+    "head": {
+      "x_pp_mm": 1115.1383263368132,
+      "y_pp_mm": 68.88385410938399,
+      "z_pp_mm": 733.7537974998496,
+      "x_vel_rms_mps": 0.8783924336432977,
+      "pitch_pp_deg": 90.47231364944635,
+      "err_x_rmse_mm": 331.60868947081417,
+      "err_x_max_mm": 1053.591976554001,
+      "err_y_rmse_mm": 32.036479331191934
+    },
+    "scenario": "shelf",
+    "title": "弯腰从矮柜取物",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.345048988795111,
+    "actual_peak_speed_mps": 2.7057238418308467,
+    "actual_peak_left_mps": 2.7057238418308467,
+    "actual_peak_right_mps": 2.415024589119543,
+    "realtime": {
+      "wall_time_s": 9.421548500016797,
+      "realtime_factor": 0.368941474959642,
+      "solve_time_mean_ms": 2.6868897781844527,
+      "solve_time_p95_ms": 5.289118768996559,
+      "controller_failures": 0,
+      "controller_holds": 632
+    },
+    "collision": {
+      "max_depth_mm": -0.9147229725899019,
+      "hit_frames": 4,
+      "seconds": 0.04,
+      "pairs": [
+        {
+          "pair": [
+            "left_hand_thumb_2_link",
+            "left_hip_pitch_link"
+          ],
+          "kind": "arm-body",
+          "frames": 4,
+          "depth_mm": -0.9147229725899019,
+          "t0": 0.42000000000000004,
+          "t1": 0.45000000000000007
+        }
+      ]
+    }
+  },
+  "greet": {
+    "duration_s": 3.8000000000000003,
+    "steps": 1901,
+    "hand_pos_err_mm": {
+      "rmse": 183.6819698326578,
+      "mean": 130.5099484015515,
+      "max": 705.5239945728086,
+      "left_rmse": 192.98332686524878,
+      "right_rmse": 173.88377622777628
+    },
+    "hand_rot_err_deg": {
+      "rmse": 16.632157079274894,
+      "mean": 11.431634768519466,
+      "max": 63.60301622240976
+    },
+    "balance": {
+      "margin_min_m": -0.5625366079179853,
+      "margin_hull_min_mm": -542.5366079179853,
+      "margin_mean_m": -0.022740361340340017,
+      "foot_drift_max_mm": 63.94750087877371,
+      "foot_rot_drift_max_deg": 64.55305671525736,
+      "ncon_min": 0,
+      "base_z_min": 0.33122271407981774,
+      "fell": true,
+      "fall_time_s": 3.748
+    },
+    "smoothness": {
+      "joint_vel_max": 4.08397746020075,
+      "joint_vel_rms": 0.8788944540730229,
+      "joint_acc_max": 1653.2805272043636,
+      "joint_acc_max_t": 1.45,
+      "joint_acc_rms": 13.196596377893169,
+      "joint_jerk_rms": 6596.605798005484,
+      "joint_jerk_max": 906541.9205814366,
+      "ee_acc_max": 15.00150107228337,
+      "ee_acc_max_t": 1.46,
+      "ee_acc_rms": 6.158961669274473,
+      "ee_jerk_rms": 355.1966730718128,
+      "err_acc_rms_mm": 3151.025017269287,
+      "err_jerk_rms_mm": 126626.15829732307,
+      "base_vel_max": 2.831311929790831,
+      "steady_joint_acc_rms": 14.206301051011632,
+      "steady_joint_jerk_rms": 7106.741140513131,
+      "steady_ee_acc_rms": 6.435702891242241,
+      "steady_ee_jerk_rms": 379.32735101582045
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.9712189709167243,
+      "solve_time_max_ms": 55.307709029875696,
+      "solve_time_p95_ms": 3.9575455128215253,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.32919120333106766,
+      "margin_min_m": 0.019225126313912093,
+      "hand_pos_err_mean_mm": 44.858668530633295,
+      "hand_pos_err_max_mm": 160.62437310451324
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 3.0833170982382594,
+      "actual_peak_deg": 67.64107621312101,
+      "rmse_deg": 17.178412835569148,
+      "peak_err_deg": 67.64107621312101
+    },
+    "head": {
+      "x_pp_mm": 1140.0654619323373,
+      "y_pp_mm": 316.5703634257958,
+      "z_pp_mm": 597.9155337901766,
+      "x_vel_rms_mps": 0.6589132997916712,
+      "pitch_pp_deg": 70.06924422446235,
+      "err_x_rmse_mm": 263.67489068920304,
+      "err_x_max_mm": 1036.2898477192114,
+      "err_y_rmse_mm": 60.805480006083236
+    },
+    "scenario": "greet",
+    "title": "抬手打招呼",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.4637882126900557,
+    "actual_peak_speed_mps": 2.202092467988446,
+    "actual_peak_left_mps": 2.162005501796648,
+    "actual_peak_right_mps": 2.202092467988446,
+    "realtime": {
+      "wall_time_s": 10.199305334012024,
+      "realtime_factor": 0.3727704853899531,
+      "solve_time_mean_ms": 3.0692166045356126,
+      "solve_time_p95_ms": 4.090374975930899,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "open_door": {
+    "duration_s": 3.2,
+    "steps": 1601,
+    "hand_pos_err_mm": {
+      "rmse": 84.83069386306882,
+      "mean": 73.4125916053571,
+      "max": 230.7122283106435,
+      "left_rmse": 84.62952933431993,
+      "right_rmse": 85.03138248453261
+    },
+    "hand_rot_err_deg": {
+      "rmse": 8.940104335326303,
+      "mean": 7.83106945719669,
+      "max": 21.575741008952676
+    },
+    "balance": {
+      "margin_min_m": -0.1504019903534806,
+      "margin_hull_min_mm": -130.4019903534806,
+      "margin_mean_m": 0.022961650460043326,
+      "foot_drift_max_mm": 42.62173278240209,
+      "foot_rot_drift_max_deg": 21.56707611073708,
+      "ncon_min": 1,
+      "base_z_min": 0.7552451092892837,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 4.085446116072042,
+      "joint_vel_rms": 0.59937944849109,
+      "joint_acc_max": 329.6991473422194,
+      "joint_acc_max_t": 1.3880000000000001,
+      "joint_acc_rms": 6.302097105935015,
+      "joint_jerk_rms": 2255.02528183027,
+      "joint_jerk_max": 193373.2479585973,
+      "ee_acc_max": 12.15180960394968,
+      "ee_acc_max_t": 2.612,
+      "ee_acc_rms": 5.440189270477651,
+      "ee_jerk_rms": 186.6389409419693,
+      "err_acc_rms_mm": 2454.862281239389,
+      "err_jerk_rms_mm": 107810.24544438127,
+      "base_vel_max": 0.517995991088527,
+      "steady_joint_acc_rms": 6.73689371506564,
+      "steady_joint_jerk_rms": 2449.2751360178404,
+      "steady_ee_acc_rms": 5.839569024531334,
+      "steady_ee_jerk_rms": 189.02234709690828
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.7645591364853317,
+      "solve_time_max_ms": 6.772833992727101,
+      "solve_time_p95_ms": 3.741154441377148,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.17201589503355674,
+      "margin_min_m": 0.021698588214979327,
+      "hand_pos_err_mean_mm": 30.190563805448836,
+      "hand_pos_err_max_mm": 138.14656694532883
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 10.04133376,
+      "actual_peak_deg": 27.783123305598743,
+      "rmse_deg": 9.731342706523192,
+      "peak_err_deg": 27.783123305598743
+    },
+    "head": {
+      "x_pp_mm": 414.4305367968788,
+      "y_pp_mm": 167.87004052205228,
+      "z_pp_mm": 69.31457970964905,
+      "x_vel_rms_mps": 0.2854439177078855,
+      "pitch_pp_deg": 36.51555129762509,
+      "err_x_rmse_mm": 109.62400833555711,
+      "err_x_max_mm": 373.83181247878684,
+      "err_y_rmse_mm": 30.293344203673847
+    },
+    "scenario": "open_door",
+    "title": "拉开柜门",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.435177049746702,
+    "actual_peak_speed_mps": 1.771439400282187,
+    "actual_peak_left_mps": 0.6317008883156069,
+    "actual_peak_right_mps": 1.771439400282187,
+    "realtime": {
+      "wall_time_s": 12.71988849999616,
+      "realtime_factor": 0.25173176635950595,
+      "solve_time_mean_ms": 4.487929087603985,
+      "solve_time_p95_ms": 5.783458997029811,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "fast06": {
+    "duration_s": 8.68,
+    "steps": 4341,
+    "hand_pos_err_mm": {
+      "rmse": 16.356492837966734,
+      "mean": 13.042224286224435,
+      "max": 43.77610276740932,
+      "left_rmse": 16.333973986523244,
+      "right_rmse": 16.37898072910815
+    },
+    "hand_rot_err_deg": {
+      "rmse": 1.1152263970945284,
+      "mean": 0.90395385599148,
+      "max": 2.482996338051134
+    },
+    "balance": {
+      "margin_min_m": 0.01716796949781875,
+      "margin_hull_min_mm": 37.167969497818746,
+      "margin_mean_m": 0.04684062884778895,
+      "foot_drift_max_mm": 3.9697601019537214,
+      "foot_rot_drift_max_deg": 1.1366680099695792,
+      "ncon_min": 4,
+      "base_z_min": 0.7560852348480442,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 1.1940595641996812,
+      "joint_vel_rms": 0.27037627700452294,
+      "joint_acc_max": 47.34575220041623,
+      "joint_acc_max_t": 0.006,
+      "joint_acc_rms": 1.1320243893272484,
+      "joint_jerk_rms": 87.05640493071395,
+      "joint_jerk_max": 10221.51074351063,
+      "ee_acc_max": 8.540343094673077,
+      "ee_acc_max_t": 0.004,
+      "ee_acc_rms": 1.2155124052136752,
+      "ee_jerk_rms": 30.416561608304892,
+      "err_acc_rms_mm": 676.4402225511841,
+      "err_jerk_rms_mm": 55000.974743940904,
+      "base_vel_max": 0.2429335009779394,
+      "steady_joint_acc_rms": 0.9287556537706956,
+      "steady_joint_jerk_rms": 43.998354332555635,
+      "steady_ee_acc_rms": 1.1584482332818566,
+      "steady_ee_jerk_rms": 14.969135292498883
+    },
+    "plan": {
+      "solve_time_mean_ms": 4.719533658401894,
+      "solve_time_max_ms": 454.25249997060746,
+      "solve_time_p95_ms": 6.744332681410021,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.14210483746533845,
+      "margin_min_m": 0.02232304416414389,
+      "hand_pos_err_mean_mm": 15.183348791068152,
+      "hand_pos_err_max_mm": 34.99039787326545
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 6.979198642177491,
+      "rmse_deg": 4.433516706231704,
+      "peak_err_deg": 6.979198642177491
+    },
+    "head": {
+      "x_pp_mm": 156.0585073136773,
+      "y_pp_mm": 7.392592442226331,
+      "z_pp_mm": 18.367307031789124,
+      "x_vel_rms_mps": 0.1404676900529053,
+      "pitch_pp_deg": 5.400226947714751,
+      "err_x_rmse_mm": 13.790043803343746,
+      "err_x_max_mm": 43.07627228019092,
+      "err_y_rmse_mm": 1.696506022016435
+    },
+    "scenario": "fast06",
+    "title": "高速档 0.6 m/s",
+    "controller": "balance",
+    "target_peak_speed_mps": 0.42380417294666345,
+    "actual_peak_speed_mps": 0.47551825219442795,
+    "actual_peak_left_mps": 0.47551825219442795,
+    "actual_peak_right_mps": 0.4747882938090663,
+    "realtime": {
+      "wall_time_s": 24.87716520804679,
+      "realtime_factor": 0.34899474788999324,
+      "solve_time_mean_ms": 3.3224351993268297,
+      "solve_time_p95_ms": 3.9614170091226697,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "fast08": {
+    "duration_s": 7.86,
+    "steps": 3931,
+    "hand_pos_err_mm": {
+      "rmse": 60.99925883310443,
+      "mean": 36.306916612952,
+      "max": 192.53121060587657,
+      "left_rmse": 60.8863872336501,
+      "right_rmse": 61.11192196298646
+    },
+    "hand_rot_err_deg": {
+      "rmse": 3.505339016576417,
+      "mean": 2.1779854630460953,
+      "max": 10.22508150857743
+    },
+    "balance": {
+      "margin_min_m": -0.012760473194977119,
+      "margin_hull_min_mm": 7.23952680502288,
+      "margin_mean_m": 0.03763409703398431,
+      "foot_drift_max_mm": 12.18729258655812,
+      "foot_rot_drift_max_deg": 8.33384581129044,
+      "ncon_min": 4,
+      "base_z_min": 0.7527042617477634,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 1.1961407452151496,
+      "joint_vel_rms": 0.2944373005539556,
+      "joint_acc_max": 47.33722017104261,
+      "joint_acc_max_t": 0.006,
+      "joint_acc_rms": 1.4299786410534112,
+      "joint_jerk_rms": 120.88825164759764,
+      "joint_jerk_max": 10219.972245591318,
+      "ee_acc_max": 8.540293415236487,
+      "ee_acc_max_t": 0.004,
+      "ee_acc_rms": 1.7318433458671554,
+      "ee_jerk_rms": 38.66371596403185,
+      "err_acc_rms_mm": 1436.7629807631583,
+      "err_jerk_rms_mm": 76843.65571308265,
+      "base_vel_max": 0.27791500460721813,
+      "steady_joint_acc_rms": 1.2774717085690874,
+      "steady_joint_jerk_rms": 94.0682900539953,
+      "steady_ee_acc_rms": 1.7187372207896603,
+      "steady_ee_jerk_rms": 27.402058820295625
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.93308092407413,
+      "solve_time_max_ms": 4.369167028926313,
+      "solve_time_p95_ms": 3.3413828583434224,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.15454440713385514,
+      "margin_min_m": 0.02232304416414389,
+      "hand_pos_err_mean_mm": 16.767079372842073,
+      "hand_pos_err_max_mm": 36.8873377691685
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 13.898273475193182,
+      "rmse_deg": 6.31176375354871,
+      "peak_err_deg": 13.898273475193182
+    },
+    "head": {
+      "x_pp_mm": 240.57288918528263,
+      "y_pp_mm": 9.993034137535744,
+      "z_pp_mm": 24.524983233694453,
+      "x_vel_rms_mps": 0.149314164564402,
+      "pitch_pp_deg": 14.452522702576335,
+      "err_x_rmse_mm": 63.677297554703884,
+      "err_x_max_mm": 187.47717242994597,
+      "err_y_rmse_mm": 2.311042849337834
+    },
+    "scenario": "fast08",
+    "title": "高速档 0.8 m/s",
+    "controller": "balance",
+    "target_peak_speed_mps": 0.565745998894876,
+    "actual_peak_speed_mps": 0.639556095968615,
+    "actual_peak_left_mps": 0.639556095968615,
+    "actual_peak_right_mps": 0.6375454529746805,
+    "realtime": {
+      "wall_time_s": 20.263153541018255,
+      "realtime_factor": 0.38799488855893666,
+      "solve_time_mean_ms": 2.98472241765299,
+      "solve_time_p95_ms": 3.4168955171480775,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "fast10": {
+    "duration_s": 7.368,
+    "steps": 3685,
+    "hand_pos_err_mm": {
+      "rmse": 224.51773968653615,
+      "mean": 126.04347912672716,
+      "max": 893.0040065490051,
+      "left_rmse": 224.31644249849225,
+      "right_rmse": 224.71885655797348
+    },
+    "hand_rot_err_deg": {
+      "rmse": 14.783719643488206,
+      "mean": 7.7137388886352705,
+      "max": 67.54325796325789
+    },
+    "balance": {
+      "margin_min_m": -0.606477543184902,
+      "margin_hull_min_mm": -586.477543184902,
+      "margin_mean_m": -0.024698388506515557,
+      "foot_drift_max_mm": 193.7069008012624,
+      "foot_rot_drift_max_deg": 70.27776682630017,
+      "ncon_min": 0,
+      "base_z_min": 0.12700946667372312,
+      "fell": true,
+      "fall_time_s": 4.95
+    },
+    "smoothness": {
+      "joint_vel_max": 17.973844574729593,
+      "joint_vel_rms": 0.7663954619797806,
+      "joint_acc_max": 948.9233017467062,
+      "joint_acc_max_t": 4.776,
+      "joint_acc_rms": 26.54871403704495,
+      "joint_jerk_rms": 8161.313790450694,
+      "joint_jerk_max": 534823.6692321385,
+      "ee_acc_max": 199.21537817972379,
+      "ee_acc_max_t": 4.968,
+      "ee_acc_rms": 16.5480474280017,
+      "ee_jerk_rms": 4300.907757058105,
+      "err_acc_rms_mm": 6155.404890785728,
+      "err_jerk_rms_mm": 1610630.1317599234,
+      "base_vel_max": 2.8362887901716887,
+      "steady_joint_acc_rms": 8.394146637501711,
+      "steady_joint_jerk_rms": 5686.59282859493,
+      "steady_ee_acc_rms": 3.2201922903658775,
+      "steady_ee_jerk_rms": 98.40361204831797
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.665365017115909,
+      "solve_time_max_ms": 3.859790973365307,
+      "solve_time_p95_ms": 3.0045000021345913,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.16188288664331352,
+      "margin_min_m": 0.02232304416414389,
+      "hand_pos_err_mean_mm": 18.49929957379552,
+      "hand_pos_err_max_mm": 45.45772046429867
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 65.24488591445541,
+      "rmse_deg": 13.702553147596456,
+      "peak_err_deg": 65.24488591445541
+    },
+    "head": {
+      "x_pp_mm": 1250.4902356305668,
+      "y_pp_mm": 14.027694887244325,
+      "z_pp_mm": 576.788612822938,
+      "x_vel_rms_mps": 0.6325268375124595,
+      "pitch_pp_deg": 71.45209245332767,
+      "err_x_rmse_mm": 296.94098719373363,
+      "err_x_max_mm": 1245.849240340303,
+      "err_y_rmse_mm": 3.605776060384502
+    },
+    "scenario": "fast10",
+    "title": "高速档 1.0 m/s",
+    "controller": "balance",
+    "target_peak_speed_mps": 0.712127847224291,
+    "actual_peak_speed_mps": 2.441596916016218,
+    "actual_peak_left_mps": 2.441596916016218,
+    "actual_peak_right_mps": 2.4340401392644346,
+    "realtime": {
+      "wall_time_s": 14.609644292038865,
+      "realtime_factor": 0.5044612895891027,
+      "solve_time_mean_ms": 1.9798464060279577,
+      "solve_time_p95_ms": 3.4234249964356422,
+      "controller_failures": 0,
+      "controller_holds": 1148
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "fast10_dir": {
+    "duration_s": 6.9,
+    "steps": 3451,
+    "hand_pos_err_mm": {
+      "rmse": 256.3509057796573,
+      "mean": 137.765235047083,
+      "max": 1013.4841350439269,
+      "left_rmse": 256.3293585350045,
+      "right_rmse": 256.37245121333655
+    },
+    "hand_rot_err_deg": {
+      "rmse": 15.626825857328049,
+      "mean": 7.797725511047466,
+      "max": 67.79912701939001
+    },
+    "balance": {
+      "margin_min_m": -0.616615442055918,
+      "margin_hull_min_mm": -596.615442055918,
+      "margin_mean_m": -0.03440585314226708,
+      "foot_drift_max_mm": 192.20861771197036,
+      "foot_rot_drift_max_deg": 70.88070965091013,
+      "ncon_min": 0,
+      "base_z_min": 0.09775452291782395,
+      "fell": true,
+      "fall_time_s": 4.186
+    },
+    "smoothness": {
+      "joint_vel_max": 17.401557244797882,
+      "joint_vel_rms": 0.7195900788549472,
+      "joint_acc_max": 878.6470552209524,
+      "joint_acc_max_t": 4.038,
+      "joint_acc_rms": 19.18005845001147,
+      "joint_jerk_rms": 7253.081859238997,
+      "joint_jerk_max": 486466.3595045699,
+      "ee_acc_max": 209.08557834013322,
+      "ee_acc_max_t": 4.208,
+      "ee_acc_rms": 13.059657622995534,
+      "ee_jerk_rms": 2705.9653429780274,
+      "err_acc_rms_mm": 7980.496005472643,
+      "err_jerk_rms_mm": 1381801.2982592862,
+      "base_vel_max": 2.8619192232871864,
+      "steady_joint_acc_rms": 11.653537918437083,
+      "steady_joint_jerk_rms": 7503.265029908667,
+      "steady_ee_acc_rms": 4.00285785018045,
+      "steady_ee_jerk_rms": 105.87219438156205
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.702031001985154,
+      "solve_time_max_ms": 3.643499978352338,
+      "solve_time_p95_ms": 3.054237680044025,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.2670339793849583,
+      "margin_min_m": 0.016771458141902548,
+      "hand_pos_err_mean_mm": 24.721077096588115,
+      "hand_pos_err_max_mm": 56.89990640415786
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 63.50598454573957,
+      "rmse_deg": 14.497717551017734,
+      "peak_err_deg": 63.50598454573957
+    },
+    "head": {
+      "x_pp_mm": 1242.5902046039187,
+      "y_pp_mm": 5.958120535279645,
+      "z_pp_mm": 570.9894085948355,
+      "x_vel_rms_mps": 0.7189828685505913,
+      "pitch_pp_deg": 70.35525504672688,
+      "err_x_rmse_mm": 307.43930495429646,
+      "err_x_max_mm": 1247.4104079275544,
+      "err_y_rmse_mm": 1.1497303620548696
+    },
+    "scenario": "fast10_dir",
+    "title": "1.0 m/s 前后推拉",
+    "controller": "balance",
+    "target_peak_speed_mps": 0.8271296962088225,
+    "actual_peak_speed_mps": 2.710249506342904,
+    "actual_peak_left_mps": 2.6459327783503617,
+    "actual_peak_right_mps": 2.710249506342904,
+    "realtime": {
+      "wall_time_s": 12.687334166024812,
+      "realtime_factor": 0.5440071105309691,
+      "solve_time_mean_ms": 1.7458817527770578,
+      "solve_time_p95_ms": 3.198583028279245,
+      "controller_failures": 0,
+      "controller_holds": 1326
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "take01": {
+    "duration_s": 4.758,
+    "steps": 2380,
+    "hand_pos_err_mm": {
+      "rmse": 15.836289670165327,
+      "mean": 11.83071405252457,
+      "max": 44.555225406984235,
+      "left_rmse": 9.027937940134862,
+      "right_rmse": 20.495669727624016
+    },
+    "hand_rot_err_deg": {
+      "rmse": 1.6266743303516782,
+      "mean": 1.0768744163142365,
+      "max": 5.593313722884306
+    },
+    "balance": {
+      "margin_min_m": 0.01816909769211128,
+      "margin_hull_min_mm": 38.16909769211128,
+      "margin_mean_m": 0.04852201587227646,
+      "foot_drift_max_mm": 5.683535975796461,
+      "foot_rot_drift_max_deg": 1.8039484874846492,
+      "ncon_min": 2,
+      "base_z_min": 0.7650755701690802,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 4.526677658532018,
+      "joint_vel_rms": 0.397991528094911,
+      "joint_acc_max": 44.58809663010604,
+      "joint_acc_max_t": 0.006,
+      "joint_acc_rms": 2.984962746348878,
+      "joint_jerk_rms": 213.84088917327585,
+      "joint_jerk_max": 17491.346261046612,
+      "ee_acc_max": 9.69544143981712,
+      "ee_acc_max_t": 1.52,
+      "ee_acc_rms": 3.5341307175791283,
+      "ee_jerk_rms": 81.00061298010462,
+      "err_acc_rms_mm": 1592.778854287106,
+      "err_jerk_rms_mm": 96687.09778883829,
+      "base_vel_max": 0.27193952197474847,
+      "steady_joint_acc_rms": 3.000638410280518,
+      "steady_joint_jerk_rms": 196.4641321690666,
+      "steady_ee_acc_rms": 3.6736852470937547,
+      "steady_ee_jerk_rms": 71.32150509331288
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.8071122263525328,
+      "solve_time_max_ms": 3.9553329697810113,
+      "solve_time_p95_ms": 3.2417416805401444,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.0979093047164609,
+      "margin_min_m": 0.028345801697385778,
+      "hand_pos_err_mean_mm": 18.37864038271937,
+      "hand_pos_err_max_mm": 102.15571227077564
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 6.4217389276903445,
+      "rmse_deg": 3.8242368158488054,
+      "peak_err_deg": 6.4217389276903445
+    },
+    "head": {
+      "x_pp_mm": 102.84135981653738,
+      "y_pp_mm": 82.47751148709658,
+      "z_pp_mm": 15.077039781812518,
+      "x_vel_rms_mps": 0.11834520703046945,
+      "pitch_pp_deg": 4.89986158196211,
+      "err_x_rmse_mm": 11.553415930611033,
+      "err_x_max_mm": 31.87949314419329,
+      "err_y_rmse_mm": 4.318443581389261
+    },
+    "scenario": "take01",
+    "title": "FBX take01 · 右手抬起挥动",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.4438181745917154,
+    "actual_peak_speed_mps": 1.440254109513265,
+    "actual_peak_left_mps": 0.1842682271009309,
+    "actual_peak_right_mps": 1.440254109513265,
+    "realtime": {
+      "wall_time_s": 12.241963999986183,
+      "realtime_factor": 0.38882649875505043,
+      "solve_time_mean_ms": 2.977728587379601,
+      "solve_time_p95_ms": 3.4552940749563277,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "take02": {
+    "duration_s": 4.758,
+    "steps": 2380,
+    "hand_pos_err_mm": {
+      "rmse": 27.443958236115442,
+      "mean": 21.853060226838544,
+      "max": 64.72768744711108,
+      "left_rmse": 27.96164639705183,
+      "right_rmse": 26.916315091363
+    },
+    "hand_rot_err_deg": {
+      "rmse": 2.461498882492819,
+      "mean": 2.07904647182036,
+      "max": 6.0620060615515925
+    },
+    "balance": {
+      "margin_min_m": 0.020127998699749496,
+      "margin_hull_min_mm": 40.12799869974949,
+      "margin_mean_m": 0.044355787874675645,
+      "foot_drift_max_mm": 10.760603421013325,
+      "foot_rot_drift_max_deg": 3.273634234993432,
+      "ncon_min": 0,
+      "base_z_min": 0.765578709845659,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 3.1077090049069,
+      "joint_vel_rms": 0.3938619244843371,
+      "joint_acc_max": 758.6454460958438,
+      "joint_acc_max_t": 1.364,
+      "joint_acc_rms": 9.324941641400741,
+      "joint_jerk_rms": 5185.433936567063,
+      "joint_jerk_max": 450577.9430714042,
+      "ee_acc_max": 19.028743785543806,
+      "ee_acc_max_t": 1.294,
+      "ee_acc_rms": 4.77964708761698,
+      "ee_jerk_rms": 247.69493257106296,
+      "err_acc_rms_mm": 2329.5216673497266,
+      "err_jerk_rms_mm": 193978.8802037879,
+      "base_vel_max": 0.34520191478392875,
+      "steady_joint_acc_rms": 9.788095681741062,
+      "steady_joint_jerk_rms": 5479.684130317852,
+      "steady_ee_acc_rms": 4.964870382524414,
+      "steady_ee_jerk_rms": 250.17535971068068
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.8627600217748554,
+      "solve_time_max_ms": 6.984125007875264,
+      "solve_time_p95_ms": 3.3682333305478096,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.06767378151217163,
+      "margin_min_m": 0.028345801697385778,
+      "hand_pos_err_mean_mm": 16.31741891582492,
+      "hand_pos_err_max_mm": 86.50105510248476
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 7.866825988235159,
+      "rmse_deg": 4.1742831378187875,
+      "peak_err_deg": 7.866825988235159
+    },
+    "head": {
+      "x_pp_mm": 183.6766765219915,
+      "y_pp_mm": 20.452045392536352,
+      "z_pp_mm": 20.604882894099674,
+      "x_vel_rms_mps": 0.1884565927537781,
+      "pitch_pp_deg": 7.086939927575074,
+      "err_x_rmse_mm": 30.78356888848249,
+      "err_x_max_mm": 70.53681030735359,
+      "err_y_rmse_mm": 3.246306948557823
+    },
+    "scenario": "take02",
+    "title": "FBX take02 · 双手前推",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.2567433664833305,
+    "actual_peak_speed_mps": 1.309187667175953,
+    "actual_peak_left_mps": 1.2156193434584224,
+    "actual_peak_right_mps": 1.309187667175953,
+    "realtime": {
+      "wall_time_s": 12.52091137500247,
+      "realtime_factor": 0.3801640198095453,
+      "solve_time_mean_ms": 3.040712419897318,
+      "solve_time_p95_ms": 3.5407118673902,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  },
+  "take03": {
+    "duration_s": 4.258,
+    "steps": 2130,
+    "hand_pos_err_mm": {
+      "rmse": 11.753117724341607,
+      "mean": 10.153688498900172,
+      "max": 31.621137309220824,
+      "left_rmse": 6.769344182701959,
+      "right_rmse": 15.18049840488068
+    },
+    "hand_rot_err_deg": {
+      "rmse": 1.7404816510684293,
+      "mean": 1.314003686568294,
+      "max": 5.886552408728331
+    },
+    "balance": {
+      "margin_min_m": 0.04399321024936305,
+      "margin_hull_min_mm": 63.99321024936305,
+      "margin_mean_m": 0.05392353884326708,
+      "foot_drift_max_mm": 9.928753112678178,
+      "foot_rot_drift_max_deg": 1.6704597905194634,
+      "ncon_min": 2,
+      "base_z_min": 0.7659781069154603,
+      "fell": false,
+      "fall_time_s": null
+    },
+    "smoothness": {
+      "joint_vel_max": 6.5974557787176416,
+      "joint_vel_rms": 0.5198065083864714,
+      "joint_acc_max": 216.1630355758062,
+      "joint_acc_max_t": 2.078,
+      "joint_acc_rms": 10.991237479891554,
+      "joint_jerk_rms": 993.0302389012705,
+      "joint_jerk_max": 107108.85082147371,
+      "ee_acc_max": 14.514999284694744,
+      "ee_acc_max_t": 2.118,
+      "ee_acc_rms": 4.670416495398841,
+      "ee_jerk_rms": 169.4029930470403,
+      "err_acc_rms_mm": 2586.7858199735892,
+      "err_jerk_rms_mm": 192400.78884169605,
+      "base_vel_max": 0.19215405573716576,
+      "steady_joint_acc_rms": 11.65375868991067,
+      "steady_joint_jerk_rms": 1050.3813007358772,
+      "steady_ee_acc_rms": 4.921365982817906,
+      "steady_ee_jerk_rms": 173.1893009129803
+    },
+    "plan": {
+      "solve_time_mean_ms": 2.938960826595499,
+      "solve_time_max_ms": 6.082499981857836,
+      "solve_time_p95_ms": 3.6053918069228525,
+      "failed_steps": 0,
+      "foot_drift_max_mm": 0.05182572947607822,
+      "margin_min_m": 0.028345801697385778,
+      "hand_pos_err_mean_mm": 14.77330540837166,
+      "hand_pos_err_max_mm": 86.42153722664446
+    },
+    "torso_pitch": {
+      "cmd_peak_deg": 0.0,
+      "actual_peak_deg": 4.804731154030013,
+      "rmse_deg": 3.452324873365728,
+      "peak_err_deg": 4.804731154030013
+    },
+    "head": {
+      "x_pp_mm": 44.86713179997734,
+      "y_pp_mm": 51.78345167167991,
+      "z_pp_mm": 9.854195223741868,
+      "x_vel_rms_mps": 0.05461471950520708,
+      "pitch_pp_deg": 2.8314133413085028,
+      "err_x_rmse_mm": 7.952975911833295,
+      "err_x_max_mm": 18.767432048325983,
+      "err_y_rmse_mm": 5.56853772457361
+    },
+    "scenario": "take03",
+    "title": "FBX take03 · 右手前上举",
+    "controller": "balance",
+    "target_peak_speed_mps": 1.3522719533453014,
+    "actual_peak_speed_mps": 1.3920332347771132,
+    "actual_peak_left_mps": 0.2555502743585563,
+    "actual_peak_right_mps": 1.3920332347771132,
+    "realtime": {
+      "wall_time_s": 10.991374499979429,
+      "realtime_factor": 0.3875766402107373,
+      "solve_time_mean_ms": 2.973012200653981,
+      "solve_time_p95_ms": 3.4439103183103725,
+      "controller_failures": 0,
+      "controller_holds": 0
+    },
+    "collision": {
+      "max_depth_mm": 0.0,
+      "hit_frames": 0,
+      "seconds": 0.0,
+      "pairs": []
+    }
+  }
+}

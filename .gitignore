@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.cache
+.vscode
+
+# Python 打包产物
+build/
+dist/
+*.egg-info/
+.pytest_cache/
