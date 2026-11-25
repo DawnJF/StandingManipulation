@@ -610,7 +610,7 @@ def run(pipe, target_fn, base_z_fn=None, n_steps=None, viewer=None,
         max_target_acc=30.0, predictive_guard=False, pred_buffer=0.008,
         com_vel_gain=0.0, com_vel_tau=0.06,
         max_track_err=0.5, log_every=1, controller="kinematic",
-        governor=None):
+        governor=None, control_every=1, sync_dt=_VIEWER_SYNC_DT):
     """统一入口。
 
     controller:
@@ -643,7 +643,7 @@ def run(pipe, target_fn, base_z_fn=None, n_steps=None, viewer=None,
         bounds_rel=bounds_rel, com_margin=com_margin, rot_tau=rot_tau,
         max_target_acc=max_target_acc, predictive_guard=predictive_guard,
         pred_buffer=pred_buffer, max_track_err=max_track_err,
-        log_every=log_every)
+        log_every=log_every, control_every=control_every, sync_dt=sync_dt)
 
 
 def _run_wbc(pipe, target_fn, base_z_fn=None, n_steps=None, viewer=None,
@@ -652,7 +652,8 @@ def _run_wbc(pipe, target_fn, base_z_fn=None, n_steps=None, viewer=None,
              lean_gain=0.0, target_bounds=None, bounds_rel=None,
              com_margin=0.015, rot_tau=0.08,
              max_target_acc=30.0, predictive_guard=False, pred_buffer=0.008,
-             max_track_err=0.5, log_every=1):
+             max_track_err=0.5, log_every=1, control_every=1,
+             sync_dt=_VIEWER_SYNC_DT):
     r = pipe.robot
     m, d = r.model, r.data
     dt = pipe.dt
@@ -678,7 +679,7 @@ def _run_wbc(pipe, target_fn, base_z_fn=None, n_steps=None, viewer=None,
     tracker = _TargetTracker(hand_init, bounds_rel=bounds_rel)
     use_traj_ref = target_omega >= 50.0
 
-    sync_every = max(1, int(round(_VIEWER_SYNC_DT / dt)))
+    sync_every = max(1, int(round(sync_dt / dt)))
 
     # 头部参考：有离线规划时用规划头部轨迹（包含任务本身要求的弯腰/下蹲），
     # 没有规划（mocap/在线模式）时保持初始头部位置。
@@ -709,6 +710,7 @@ def _run_wbc(pipe, target_fn, base_z_fn=None, n_steps=None, viewer=None,
     log = _empty_log()
     status = []
     steps_done = 0
+    tau_held = None
     t_start = time.perf_counter()
 
     for step in range(n):
@@ -789,18 +791,26 @@ def _run_wbc(pipe, target_fn, base_z_fn=None, n_steps=None, viewer=None,
                               -config.BAL_TORSO_DIFF_GAIN * balance_ad[0], 0.0),
                 torso_ref)
 
-        tau = wbc.solve(hand_ref, com_ref, base_z_ref, posture,
-                        torso_ref=torso_ref, head_ref=head_ref,
-                        head_gate=head_gate, base_quat_ref=base_quat0,
-                        base_xy_ref=(base_xy_traj[min(step, len(base_xy_traj) - 1)]
-                                     if base_xy_traj is not None else base_xy0))
-        if tau is not None:
-            wbc.apply(tau)
-            status.append("solved")
+        # 控制降频：WBC 每个 control_every 步解一次，其余步保持上一拍力矩。
+        # 物理仍按 500 Hz 步进，默认 control_every=1 时行为完全不变。
+        if step % control_every == 0 or tau_held is None:
+            tau = wbc.solve(hand_ref, com_ref, base_z_ref, posture,
+                            torso_ref=torso_ref, head_ref=head_ref,
+                            head_gate=head_gate, base_quat_ref=base_quat0,
+                            base_xy_ref=(base_xy_traj[min(step, len(base_xy_traj) - 1)]
+                                         if base_xy_traj is not None else base_xy0))
+            if tau is not None:
+                tau_held = tau
+                wbc.apply(tau)
+                status.append("solved")
+            else:
+                tau_held = None
+                # 回退：至少补偿重力/科氏力，避免力矩归零后软腿
+                wbc.apply(d.qfrc_bias[r.body_dof_adr].copy())
+                status.append("failed")
         else:
-            # 回退：至少补偿重力/科氏力，避免力矩归零后软腿
-            wbc.apply(d.qfrc_bias[r.body_dof_adr].copy())
-            status.append("failed")
+            wbc.apply(tau_held)
+            status.append("solved")
 
         if drive_markers:
             for key in ("left_hand", "right_hand"):

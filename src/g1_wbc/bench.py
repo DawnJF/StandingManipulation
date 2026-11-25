@@ -22,7 +22,7 @@ from .sim import DemoPipeline
 RESULT_DIR = config.PKG_ROOT / "results"
 
 
-def evaluate(key, controller="wbc"):
+def evaluate(key, controller="wbc", control_every=1):
     pipe = DemoPipeline(key)
     plan = pipe.plan(verbose=False)
     foot_plan, margin_plan = pipe._foot_checks(plan)
@@ -42,7 +42,8 @@ def evaluate(key, controller="wbc"):
     run = realtime.run(pipe, realtime.trajectory_target(pipe),
                        realtime.trajectory_base_z(pipe), n_steps=pipe.n_steps,
                        viewer=None, pace=False, verbose=False,
-                       drive_markers=False, controller=controller)
+                       drive_markers=False, controller=controller,
+                       control_every=control_every)
     log = run["log"]
     res = compute_metrics(pipe, plan, log, foot_plan, margin_plan,
                           plan_head=pipe.plan_head)
@@ -121,18 +122,23 @@ def main():
                     default="wbc",
                     help="wbc=动力学 WBC（默认，原速 16/16）；"
                          "balance=平衡前馈（原速对照）；kinematic=位置伺服回放")
+    ap.add_argument("--control-every", type=int, default=1,
+                    help="WBC 每 N 个物理步解一次（默认 1=500 Hz；5=100 Hz）")
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
     keys = list(SCENARIOS) if args.scenario == "all" else [args.scenario]
+    suffix = "" if args.control_every == 1 else f"_ce{args.control_every}"
     out = Path(args.out) if args.out else RESULT_DIR / (
-        "scenario_metrics_wbc.json" if args.controller == "wbc"
-        else "scenario_metrics_balance.json" if args.controller == "balance"
-        else "scenario_metrics.json")
+        f"scenario_metrics_wbc{suffix}.json" if args.controller == "wbc"
+        else f"scenario_metrics_balance{suffix}.json" if args.controller == "balance"
+        else f"scenario_metrics{suffix}.json")
     results = {}
     for key in keys:
         t0 = time.perf_counter()
-        res = evaluate(key, controller=args.controller)
+        res = evaluate(key, controller=args.controller,
+                       control_every=args.control_every)
+        res["control_every"] = args.control_every
         results[key] = res
         print(_row(res) + f"  qp {res['plan']['solve_time_mean_ms']:.2f} ms"
               f"  ({time.perf_counter()-t0:.0f}s)", flush=True)
